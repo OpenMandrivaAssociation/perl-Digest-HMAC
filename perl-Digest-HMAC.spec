@@ -13,6 +13,7 @@ Source:		http://www.cpan.org/authors/id/GAAS/%{real_name}-%{version}.tar.bz2
 URL:		http://www.cpan.org
 BuildArch:	noarch
 BuildRequires:	perl-devel
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 Provides:	perl-HMAC
 Requires:	perl perl-Digest-SHA1
 
