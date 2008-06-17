@@ -1,7 +1,7 @@
 %define	name	perl-Digest-HMAC
 %define	real_name Digest-HMAC
 %define	version	1.01
-%define	release	%mkrel 14
+%define	release	%mkrel 15
 
 Summary:	Keyed-Hashing for Message Authentication
 Name:		%{name}
