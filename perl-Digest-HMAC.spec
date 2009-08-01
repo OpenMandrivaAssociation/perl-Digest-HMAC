@@ -1,27 +1,26 @@
-%define	name	perl-Digest-HMAC
-%define	real_name Digest-HMAC
-%define	version	1.01
-%define	release	%mkrel 16
+%define	upstream_name    Digest-HMAC
+%define	upstream_version 1.01
+
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
 
 Summary:	Keyed-Hashing for Message Authentication
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-Source:		http://www.cpan.org/authors/id/GAAS/%{real_name}-%{version}.tar.bz2
-URL:		http://www.cpan.org
+Url:		http://www.cpan.org
+Source0:	http://www.cpan.org/authors/id/GAAS/%{upstream_name}-%{upstream_version}.tar.bz2
+
 BuildArch:	noarch
-BuildRequires:	perl-devel
-BuildRoot:	%{_tmppath}/%{name}-buildroot
-Provides:	perl-HMAC
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 Requires:	perl perl-Digest-SHA1
+Provides:	perl-HMAC
 
 %description
 Digest-HMAC module for perl.
 
 %prep
-%setup -q -n %{real_name}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -42,5 +41,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc README Changes
 %{_mandir}/*/*
 %{perl_vendorlib}/Digest
-
-
