@@ -1,5 +1,5 @@
 %define	upstream_name    Digest-HMAC
-%define	upstream_version 1.01
+%define upstream_version 1.02
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -9,7 +9,7 @@ Summary:	Keyed-Hashing for Message Authentication
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://www.cpan.org
-Source0:	http://www.cpan.org/authors/id/GAAS/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	http://www.cpan.org/authors/id/GAAS/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
