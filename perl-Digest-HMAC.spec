@@ -4,7 +4,7 @@
 Summary:	Keyed-Hashing for Message Authentication
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	9
+Release:	10
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://www.cpan.org
