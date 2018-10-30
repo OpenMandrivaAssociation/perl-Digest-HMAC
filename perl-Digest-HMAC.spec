@@ -4,10 +4,10 @@
 Summary:	Keyed-Hashing for Message Authentication
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	11
+Release:	12
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://www.cpan.org
+Url:		http://metacpan.org/release/Digest-HMAC
 Source0:	http://www.cpan.org/authors/id/GAAS/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
