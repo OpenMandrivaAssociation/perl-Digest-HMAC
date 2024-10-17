@@ -7,7 +7,7 @@ Version:	%perl_convert_version %{modver}
 Release:	15
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://metacpan.org/release/Digest-HMAC
+Url:		https://metacpan.org/release/Digest-HMAC
 Source0:	http://www.cpan.org/authors/id/GAAS/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
