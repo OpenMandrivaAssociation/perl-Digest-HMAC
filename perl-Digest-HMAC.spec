@@ -10,6 +10,7 @@ Group:		Development/Perl
 Url:		https://metacpan.org/release/Digest-HMAC
 Source0:	http://www.cpan.org/authors/id/GAAS/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(Digest::SHA1)
 Requires:	perl(Digest::SHA1)
