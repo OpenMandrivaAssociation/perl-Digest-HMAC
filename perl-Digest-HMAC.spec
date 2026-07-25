@@ -1,14 +1,14 @@
 %define	modname	Digest-HMAC
-%define modver	1.03
+%define modver	1.05
 
 Summary:	Keyed-Hashing for Message Authentication
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	15
+Version:	%{modver}
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://metacpan.org/release/Digest-HMAC
-Source0:	http://www.cpan.org/authors/id/GAAS/%{modname}-%{modver}.tar.gz
+Url:		https://github.com/arodland/Digest-HMAC
+Source0:	https://cpan.metacpan.org/authors/id/A/AR/ARODLAND/Digest-HMAC-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl-devel
